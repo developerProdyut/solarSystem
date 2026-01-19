@@ -221,5 +221,15 @@ body {
 .neptune { width: 540px; height: 540px; animation: orbit 70s linear infinite; }
 .neptune-planet { width: 18px; height: 18px; background: #4169e1; }
 
-/
+/* ANIMATIONS */
+@keyframes orbit {
+    from { transform: translate(-50%, -50%) rotate(0deg); }
+    to   { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+@keyframes pulse {
+    from { box-shadow: 0 0 40px 20px rgba(255,200,0,0.8); }
+    to   { box-shadow: 0 0 70px 40px rgba(255,200,0,1); }
+}
+
 
